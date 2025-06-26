@@ -1,0 +1,698 @@
+html {
+    height: 100%;
+}
+
+/* ========== Base ========== */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f4f7ff, #e3eeff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== Header ========== */
+header {
+    background: #1e2d5c;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.login-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    background-color: #1e2d5c;
+    color: white;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+.login-header h1 {
+    margin: 0;
+    text-align: center;
+}
+.main-header {
+    background: #1e2d5c;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+.main-header nav {
+    margin-top: 10px;
+}
+.main-header a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.main-header a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Intro Section ========== */
+.intro {
+    background: white;
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e2d5c;
+}
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* ========== Buttons ========== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.primary-btn {
+    background-color: #0066cc;
+    color: white;
+    font-weight: 600;
+}
+.primary-btn:hover {
+    background-color: #004f99;
+    transform: scale(1.03);
+}
+
+/* ========== Footer ========== */
+footer {
+    margin-top: auto;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* ========== Navigation ========== */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* ========== Navigation Buttons (Unified Style) ========== */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.nav-btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #004f99;
+    transform: scale(1.05);
+}
+
+/* ========== Main Content ========== */
+main {
+    padding: 2rem;
+    text-align: center;
+    flex:1;
+}
+
+/* ========== Buttons ========== */
+.btn,
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover,
+button:hover {
+    background: #004f99;
+}
+
+/* ========== Form Container ========== 
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* ========== Input & Select Styles ========== 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+/* ========== Form ========== */
+.form-container {
+    width: 320px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.form-container h2{
+    text-align: center;
+}
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Optional: remove border for the button to keep style clean */
+.form-container button[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    font-weight: 600;
+    border: none; /* Make it consistent with inputs */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #004f99;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+    cursor: pointer;
+}
+
+.admin-controls {
+    background-color: white;  
+    border-radius: 12px;
+    padding: 40px 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    gap: 40px;               
+    max-width: 400px;        
+    margin: 0 auto;        
+}
+
+.admin-controls .btn {
+    width: 100%;
+    height: 30px;
+    max-width: 300px;
+    text-align: center;
+    line-height: 30px; 
+    display: block; 
+}
+
+.lecturer {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.lecturer .btn {
+    width: 100%;
+    height: 30px;
+    max-width: 300px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+.form-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group select,
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Checkbox Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Full width button */
+.full-width {
+    width: 100%;
+}
+
+/* Register link */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+/* ========== Table Styling ========== */
+/*
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin: 1em auto;
+    background: white;
+}
+thead tr {
+    text-align: center;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #eee;
+}*/
+table {
+    width: 100%;
+    max-width: 1000px;     
+    margin: 1em auto;      
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);  
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1e2d5c;
+    color: white;
+}
+
+thead tr th{
+    text-align: center;
+}
+
+th, td {
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+th {
+    background-color: #f0f0f0;
+    text-align: center;    
+    font-weight: 600;
+}
+
+td {
+    text-align: left;    
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ========== Dashboard Cards ========== */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.card:hover {
+    background: #1e2d5c;
+    color: white;
+}
+
+/* ========== Search Bar / Action Links ========== */
+.search-bar {
+    margin: 20px auto;
+    width: fit-content;
+}
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0066cc;
+}
+.actions a:hover {
+    text-decoration: underline;
+    color: #004f99;
+}
+/* Align input, select, and buttons side by side */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Override wide inputs for inline layout */
+.search-form input[type="text"],
+.search-form select {
+  width: auto;
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Consistent button sizing */
+.search-form .btn,
+.search-form button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* ========== Status Messages ========== */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+.message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ===== Admin Dashboard Table ===== */
+.admin-table {
+    width: 50%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed;  
+}
+.admin-table th,
+.admin-table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.admin-table th{
+    background-color: #1e2d5c;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.admin-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 15px;
+}
+.admin-table th {
+    background-color: #1e2d5c;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+.admin-table .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.admin-table .actions a {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #0066cc;
+    transition: background 0.3s ease;
+}
+.admin-table .actions a:hover {
+    background: #004f99;
+}
+.admin-table .actions .delete {
+    background: #cc0000;
+}
+.admin-table .actions .delete:hover {
+    background: #990000;
+}
+
+.admin-table-booking {
+    table-layout: auto; 
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.admin-table-booking th {
+    background-color: #1e2d5c;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Allow Room column cells to wrap and show full text */
+.admin-table-booking td:nth-child(2) {
+    white-space: normal;        /* allow wrapping */
+    overflow: visible;
+    word-break: break-word;     /* break long words if needed */
+}
+
+/* Style action cell buttons to fit side by side nicely */
+.admin-table-booking td:last-child form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.admin-table-booking td:last-child form button {
+    flex: 1;                  /* buttons take equal available width */
+    max-width: 120px;         /* limit max width */
+    white-space: nowrap;      /* prevent button text wrapping */
+    padding: 6px 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.admin-table-booking .action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* ========== Responsive ========== */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .dashboard-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
+
+/* ========== Print ========== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  main h2,
+  main table,
+  main table * {
+    visibility: visible;
+  }
+
+  main h2,
+  main table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12pt;
+  }
+
+  main table th,
+  main table td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+    background: white !important; /* Override dark background */
+    color: black !important;      /* Override white text */
+    position: static !important;  /* Cancel sticky */
+  }
+}
+
+.manage-users-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.manage-users-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.manage-users-search-input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.manage-users-form select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.manage-users-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
